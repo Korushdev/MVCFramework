@@ -19,9 +19,11 @@
                 $this->HashObject = explode( '#', \Core::GetCurrentUrl() ); 
                 $this->QueryObject = explode('?', $this->HashObject[0]); 
                 $this->UrlObject = explode('/', $this->QueryObject[0]);  
+                
+                $this->Route();
             }
 
-            public function Route()
+            private function Route()
             {
                 $offsetUrlDividerCount = explode('/', Site::$UrlOffset); 
                 $offsetUrlDividerCount = count( $offsetUrlDividerCount );
