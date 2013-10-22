@@ -2,7 +2,7 @@
     namespace Infrastructure\Routing
     {
         use Infrastructure\Site as Site;
-        //use Infrastructure\Functions\Core as Core;    
+        use Infrastructure\Functions\Core as Core;    
 
         class Routing
         {            
@@ -16,7 +16,7 @@
                 global $_SERVER;
 
                 $this->Dir = $_SERVER['DOCUMENT_ROOT'] . '/' . Site::$UrlOffset;   
-                $this->HashObject = explode( '#', \Core::GetCurrentUrl() ); 
+                $this->HashObject = explode( '#', Core::GetCurrentUrl() ); 
                 $this->QueryObject = explode('?', $this->HashObject[0]); 
                 $this->UrlObject = explode('/', $this->QueryObject[0]);  
             }

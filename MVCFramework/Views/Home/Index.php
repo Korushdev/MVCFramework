@@ -1,3 +1,3 @@
 <?php
-    Core::PrintExt( $model );
+    \Core::PrintExt( $model );
 ?>

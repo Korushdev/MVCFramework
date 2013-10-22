@@ -1,6 +1,6 @@
 <?php
-    //namespace Infrastructure\Functions
-    //{
+    namespace Infrastructure\Functions
+    {
         class Core
         {
             // Returns the current page URL
@@ -33,5 +33,5 @@
                 echo "</pre>";                   
             }    
         }
-    //}
+    }
 ?>
