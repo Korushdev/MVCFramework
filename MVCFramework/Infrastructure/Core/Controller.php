@@ -45,6 +45,7 @@
                 {
                     $loadedController = new $controllerName();
                     $actionName = "Action" . $action;
+                    // $_FILES needs to be added
                     $this->call_user_func_named( array( $loadedController, $actionName ), $_POST );
                 }
             }
